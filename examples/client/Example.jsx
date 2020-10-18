@@ -1,13 +1,13 @@
 import React from 'react';
-import { Description, Code } from '../../src';
-import { Properties } from '../../src/Properties';
-import { Component } from '../../src/Component';
+import { Description, Code, Properties, Component } from '../../src';
 
 export const Example = () => {
 
     const code = `import { Description, Code } from '@scripty/react-examples';
 
 export const MyComponent = () => {
+
+     const code = \`Your Component goes here\`;
 
      const propertiesData = [
         {
