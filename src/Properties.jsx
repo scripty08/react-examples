@@ -25,9 +25,9 @@ export const Properties = (props) => {
     } = props;
 
     const getTableData = () => {
-        return data.map((row) => {
+        return data.map((row, key) => {
            return (
-               <tr>
+               <tr key={key}>
                    <td>{row.property}</td>
                    <td>{row.description}</td>
                    <td>{row.type}</td>
@@ -39,14 +39,16 @@ export const Properties = (props) => {
 
     return (
         <Table>
-            <tr>
-                <th>Property</th>
-                <th>Description</th>
-                <th>Type</th>
-                <th>Default</th>
-            </tr>
+            <tbody>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                </tr>
 
-            {getTableData()}
+                {getTableData()}
+            </tbody>
         </Table>
     );
 };
