@@ -4,7 +4,7 @@ const { HotModuleReplacementPlugin } = require('webpack');
 const { WebpackAfterCompilePlugin, printTable } = require('@scripty/webpack-after-compile-plugin');
 
 let data = [
-    ['URL: ', 'http://localhost:3002'],
+    ['URL: ', 'http://localhost:3000'],
 ];
 
 const config = {
